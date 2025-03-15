@@ -24,74 +24,74 @@ mesh = SubResource("QuadMesh_dpb7s")
 position = Vector2(-0.5, 50.5)
 shape = SubResource("RectangleShape2D_30s1d")
 
-[node name="PlatformLayer" type="CanvasLayer" parent="."]
+[node name="PlatformGroup" type="CanvasGroup" parent="."]
 
-[node name="Platform" type="StaticBody2D" parent="PlatformLayer"]
+[node name="Platform" type="StaticBody2D" parent="PlatformGroup"]
 modulate = Color(1, 1, 1, 0.27451)
 position = Vector2(1000, -200)
 scale = Vector2(0.5, 1)
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformLayer/Platform"]
+[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformGroup/Platform"]
 modulate = Color(0.16, 0.16, 0.16, 1)
 position = Vector2(0, 51)
 mesh = SubResource("QuadMesh_dpb7s")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformLayer/Platform"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformGroup/Platform"]
 position = Vector2(-0.5, 50.5)
 shape = SubResource("RectangleShape2D_30s1d")
 
-[node name="Platform2" type="StaticBody2D" parent="PlatformLayer"]
+[node name="Platform2" type="StaticBody2D" parent="PlatformGroup"]
 modulate = Color(1, 1, 1, 0.27451)
 position = Vector2(2000, -400)
 scale = Vector2(0.5, 1)
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformLayer/Platform2"]
+[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformGroup/Platform2"]
 modulate = Color(0.16, 0.16, 0.16, 1)
 position = Vector2(0, 51)
 mesh = SubResource("QuadMesh_dpb7s")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformLayer/Platform2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformGroup/Platform2"]
 position = Vector2(-0.5, 50.5)
 shape = SubResource("RectangleShape2D_30s1d")
 
-[node name="Platform3" type="StaticBody2D" parent="PlatformLayer"]
+[node name="Platform3" type="StaticBody2D" parent="PlatformGroup"]
 modulate = Color(1, 1, 1, 0.27451)
 position = Vector2(3000, -600)
 scale = Vector2(0.5, 1)
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformLayer/Platform3"]
+[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformGroup/Platform3"]
 modulate = Color(0.16, 0.16, 0.16, 1)
 position = Vector2(0, 51)
 mesh = SubResource("QuadMesh_dpb7s")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformLayer/Platform3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformGroup/Platform3"]
 position = Vector2(-0.5, 50.5)
 shape = SubResource("RectangleShape2D_30s1d")
 
-[node name="Platform4" type="StaticBody2D" parent="PlatformLayer"]
+[node name="Platform4" type="StaticBody2D" parent="PlatformGroup"]
 modulate = Color(1, 1, 1, 0.27451)
 position = Vector2(2000, -800)
 scale = Vector2(0.5, 1)
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformLayer/Platform4"]
+[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformGroup/Platform4"]
 modulate = Color(0.16, 0.16, 0.16, 1)
 position = Vector2(0, 51)
 mesh = SubResource("QuadMesh_dpb7s")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformLayer/Platform4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformGroup/Platform4"]
 position = Vector2(-0.5, 50.5)
 shape = SubResource("RectangleShape2D_30s1d")
 
-[node name="Platform5" type="StaticBody2D" parent="PlatformLayer"]
+[node name="Platform5" type="StaticBody2D" parent="PlatformGroup"]
 modulate = Color(1, 1, 1, 0.27451)
 position = Vector2(1000, -1000)
 scale = Vector2(0.5, 1)
 
-[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformLayer/Platform5"]
+[node name="MeshInstance2D" type="MeshInstance2D" parent="PlatformGroup/Platform5"]
 modulate = Color(0.16, 0.16, 0.16, 1)
 position = Vector2(0, 51)
 mesh = SubResource("QuadMesh_dpb7s")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformLayer/Platform5"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlatformGroup/Platform5"]
 position = Vector2(-0.5, 50.5)
 shape = SubResource("RectangleShape2D_30s1d")
