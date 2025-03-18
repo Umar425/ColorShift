@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://w6l7dtgxs4tb"]
+[gd_scene load_steps=5 format=3 uid="uid://w6l7dtgxs4tb"]
 
 [ext_resource type="PackedScene" uid="uid://c0t1xtssbqwvw" path="res://scenes/player.tscn" id="1_tuwt8"]
+[ext_resource type="PackedScene" uid="uid://boymmkc0g4qtu" path="res://scenes/color_swap.tscn" id="2_bonk6"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_dpb7s"]
 size = Vector2(1000, 100)
@@ -11,6 +12,7 @@ size = Vector2(999, 99)
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_tuwt8")]
+position = Vector2(0, -80)
 
 [node name="Ground" type="StaticBody2D" parent="."]
 modulate = Color(1, 1, 1, 0.27451)
@@ -25,6 +27,9 @@ position = Vector2(-0.5, 50.5)
 shape = SubResource("RectangleShape2D_30s1d")
 
 [node name="PlatformGroup" type="CanvasGroup" parent="."]
+
+[node name="ColorSwap" parent="PlatformGroup" instance=ExtResource("2_bonk6")]
+position = Vector2(978, -456)
 
 [node name="Platform" type="StaticBody2D" parent="PlatformGroup"]
 modulate = Color(1, 1, 1, 0.27451)
